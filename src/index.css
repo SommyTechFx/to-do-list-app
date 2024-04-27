@@ -142,21 +142,77 @@ li{
   }
 }
 
-@media  (width < 700px ){
+@media  (width < 830px ){
   .to-do-list{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 
   }
 
   .text-space{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 10px;
     
   }
 
+  input{
+    width: 420px;
+  }
   
+  button{
+    width: 100px;
+    height: 40px;
+  }
 }
+
+@media  (width < 820px ){
+  .to-do-list{
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  h1{
+    font-size: 25px;
+  }
+
+  .text-space{
+    /* border: 2px solid red; */
+    padding: 10px;
+    
+  }
+
+  /* ::placeholder{
+   
+  } */
+  input{
+    width: 400px;
+  }
+}
+@media  (width < 720px ){
+  .to-do-list{
+    margin-left: 60px;
+    margin-right: 60px;
+
+  }
+
+  .text-space{
+    /* border: 2px solid red; */
+    padding: 2px;
+    
+  }
+
+  input{
+    width: 320px;
+  }
+  
+  button .add-btn{
+    font-size: 20px;
+  }
+  button{
+    width: 75px;
+    height: 40px;
+  }
+}
+
 
 @media  (width < 600px ){
   .to-do-list{
@@ -168,7 +224,7 @@ li{
   }
 
   .text-space{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 5px;
     
   }
@@ -182,7 +238,6 @@ li{
 }
 
 
-
 @media  (width < 540px ){
   .to-do-list{
     margin-left: 50px;
@@ -193,7 +248,7 @@ li{
   }
 
   .text-space{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 10px;
     
   }
@@ -207,16 +262,16 @@ li{
 
 @media  (width < 480px ){
   .to-do-list{
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
   h1{
     font-size: 25px;
   }
 
   .text-space{
-    border: 2px solid red;
-    padding: 5px;
+    /* border: 2px solid red; */
+    padding: 2px;
     margin-bottom: 30px;
     
   }
@@ -225,11 +280,17 @@ li{
    font-size: 15px;
   }
   button.add-btn{
-    font-size: 20px;
+    font-size: 15px;
+  }
+
+  button{
+   height: 35px;
+   width: 60px;
   }
 
   input{
     width: 250px;
+    height: 20px;
   }
   }
 
@@ -243,8 +304,8 @@ li{
     }
   
     .text-space{
-      border: 2px solid red;
-      padding: 5px;
+      /* border: 2px solid red; */
+      padding: 2px;
       margin-bottom: 30px;
       
     }
@@ -257,7 +318,7 @@ li{
     }
   
     input{
-      width: 220px;
+      width: 210px;
     }
     }
 
