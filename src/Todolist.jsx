@@ -108,7 +108,7 @@ function ToDoList() {
        className="edit-btn"
        onClick={() => setEditTaskIndexFunc(index)}
      >
-       ✏️
+       Edit
      </button>
    </div>
  </div>

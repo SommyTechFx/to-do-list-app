@@ -115,11 +115,10 @@ h3{
   flex-grow: 1;
 }
 
-input{
-  width: 500px;
-}
+
 .text-space{
   padding: 20px;
+  align-items: baseline
 }
 h1{
   /* color: rgb(9, 122, 9); */
@@ -132,9 +131,15 @@ h1{
   
 }
 
+input{
+  width: 500px;
+  background-color: rgb(223, 213, 213);
+  border-radius: 20px;
+  border: none;
+}
 input[type = "text"]{
   font-size: 1.2rem;
-  border: 1px solid rgb(56, 55, 55);
+  /* border: 1px solid rgb(56, 55, 55); */
   border-radius: 20px;
   padding: 8px 16px;
   align-items: baseline;
@@ -142,10 +147,15 @@ input[type = "text"]{
   
  
 }
+::placeholder{
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 5px;
+}
 button{
   font-size: 1rem;
   /* padding: 7px; */
-  color: white;
+  color: black;
   cursor: pointer;
   height: 40px;
   border: none;
@@ -162,21 +172,31 @@ button.add-btn{
   background-color: #F5B700;
   font-size: 18px;
   border-radius: 20px;
-  margin-left: 5px;
+  margin-left: 3px;
+  width: 70px;
   align-items: baseline;
 
 
   
 }
 
-.add-btn:hover{
-  background-color: rgb(6, 104, 6);
+.add-btn:active{
+  background-color:#06bb52 ;
 }
 
 .delete-btn{
-  background-color: red;
+  background-color: #A20021;
+  border-radius: 18px;
+  font-size: 13px;
+  height: 30px;
+  width: 60px;
+  padding: 2px;
+  font-weight: 400;
+  color: white;
+  
 
 }
+
 
 .delete-btn:hover{
   background-color: rgb(185, 16, 16);
@@ -184,13 +204,20 @@ button.add-btn{
 
 
 .edit-btn{
-  background-color: grey;
-  margin-right: 2px;
-  margin-top: 2px;
+  background-color: #F5B700;
+  /* margin-right: 2px; */
+  /* margin-top: 2px; */
+  border-radius: 20px;
+  font-size: 13px;
+  color: black;
+   height: 30px;
+  width: 60px;
+  font-weight: 400;
+  
 }
 
 .edit-btn:hover{
-  background-color: rgb(224, 224, 224);
+ opacity: 0.8;
 }
 
 
@@ -203,13 +230,15 @@ li{
   font-size: 1.1rem;
   font-weight: 400px ;
   background-color: rgb(223, 213, 213);
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   border: 1px solid rgb(163, 163, 163);
   border-radius: 5px;
   display: flex;
   align-items: center;
   margin-left: 50px;
   margin-right: 50px;
+  border-radius: 20px;
+  padding-left: 13px;
 
 }
 
@@ -325,6 +354,64 @@ li{
   input{
     width: 250px;
   }
+
+  .delete-btn{
+    background-color: #A20021;
+    border-radius: 18px;
+    font-size: 10px;
+    height: 20px;
+    width: 45px;
+    padding: 2px;
+    font-weight: 300;
+    color: white;
+    
+  
+  }
+  
+  
+  .delete-btn:hover{
+    background-color: rgb(185, 16, 16);
+  }
+  
+  
+  .edit-btn{
+    background-color: #F5B700;
+    /* margin-right: 2px; */
+    /* margin-top: 2px; */
+    border-radius: 20px;
+    font-size: 10px;
+    color: black;
+     height: 20px;
+    width: 45px;
+    font-weight: 300;
+    
+  }
+  
+  .edit-btn:hover{
+   opacity: 0.8;
+  }
+  
+  
+  
+  ol{
+    padding: 0;
+  }
+  
+  li{
+    font-size: 10px;
+    font-weight: 400px ;
+    background-color: rgb(223, 213, 213);
+    margin-bottom: 6px;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding-left: 13px;
+  
+  }
 }
 
 
@@ -382,6 +469,65 @@ li{
     width: 250px;
     height: 20px;
   }
+
+  .delete-btn{
+    background-color: #A20021;
+    border-radius: 18px;
+    font-size: 10px;
+    height: 20px;
+    width: 45px;
+    padding: 2px;
+    font-weight: 300;
+    color: white;
+    
+  
+  }
+  
+  
+  .delete-btn:hover{
+    background-color: rgb(185, 16, 16);
+  }
+  
+  
+  .edit-btn{
+    background-color: #F5B700;
+    /* margin-right: 2px; */
+    /* margin-top: 2px; */
+    border-radius: 20px;
+    font-size: 10px;
+    color: black;
+     height: 20px;
+    width: 40px;
+    padding: 2px;
+    font-weight: 300;
+    
+  }
+  
+  .edit-btn:hover{
+   opacity: 0.8;
+  }
+  
+  
+  
+  ol{
+    padding: 0;
+  }
+  
+  li{
+    font-size: 10px;
+    font-weight: 400px ;
+    background-color: rgb(223, 213, 213);
+    margin-bottom: 6px;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding-left: 13px;
+  
+  }
   }
 
   @media  (width < 420px ){
@@ -403,19 +549,82 @@ li{
     ::placeholder{
      font-size: 15px;
     }
+
+  
     button.add-btn{
       font-size: 15px;
+      width: 50px;
+      height: 30px;
     }
   
     input{
-      width: 210px;
+      width: 200px;
+
+    }
+
+    .delete-btn{
+      background-color: #A20021;
+      border-radius: 18px;
+      font-size: 9px;
+      height: 20px;
+      width: 40px;
+      padding: 2px;
+      font-weight: 300;
+      color: white;
+      
+    
+    }
+    
+    
+    .delete-btn:hover{
+      background-color: rgb(185, 16, 16);
+    }
+    
+    
+    .edit-btn{
+      background-color: #F5B700;
+      /* margin-right: 2px; */
+      /* margin-top: 2px; */
+      border-radius: 20px;
+      font-size: 9px;
+      color: black;
+       height: 20px;
+      width: 45px;
+      font-weight: 300;
+      
+    }
+    
+    .edit-btn:hover{
+     opacity: 0.8;
+    }
+    
+    
+    
+    ol{
+      padding: 0;
+    }
+    
+    li{
+      font-size: 10px;
+      font-weight: 400px ;
+      background-color: rgb(223, 213, 213);
+      margin-bottom: 6px;
+      border: 1px solid rgb(163, 163, 163);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+      margin-right: 15px;
+      border-radius: 20px;
+      padding-left: 13px;
+    
     }
     }
 
     @media  (width < 390px ){
       .to-do-list{
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
       }
       h1{
         font-size: 20px;
@@ -440,8 +649,66 @@ li{
       }
     
       input{
-        width: 150px;
+        width: 200px;
         height: 12px;
+      }
+
+      .delete-btn{
+        background-color: #A20021;
+        border-radius: 18px;
+        font-size: 10px;
+        height: 20px;
+        width: 45px;
+        padding: 2px;
+        font-weight: 300;
+        color: white;
+        
+      
+      }
+      
+      
+      .delete-btn:hover{
+        background-color: rgb(185, 16, 16);
+      }
+      
+      
+      .edit-btn{
+        background-color: #F5B700;
+        /* margin-right: 2px; */
+        /* margin-top: 2px; */
+        border-radius: 20px;
+        font-size: 10px;
+        color: black;
+         height: 20px;
+        width: 45px;
+        font-weight: 300;
+        
+      }
+      
+      .edit-btn:hover{
+       opacity: 0.8;
+      }
+      
+      
+      
+      ol{
+        padding: 0;
+      }
+      
+      li{
+        font-size: 10px;
+        font-weight: 400px ;
+        background-color: rgb(223, 213, 213);
+        margin-bottom: 6px;
+        border: 1px solid rgb(163, 163, 163);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 20px;
+        padding-left: 13px;
+      
       }
       }
   
